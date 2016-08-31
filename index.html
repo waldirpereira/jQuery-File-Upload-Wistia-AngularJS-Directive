@@ -8,20 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/css/jquery.fileupload.css">
 
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="https://code.jquery.com/jquery-2.0.0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/js/vendor/jquery.ui.widget.js"></script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/js/jquery.iframe-transport.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/js/jquery.fileupload.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/js/jquery.fileupload-process.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.6.2/load-image.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/js/jquery.fileupload-image.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.12.5/js/jquery.fileupload-video.js"></script>
   <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-
+  
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  
+  <script src="scripts/ng-jquery-upload-wistia.js"></script>
   <script src="scripts/app.js"></script>
-  <script src="scripts/directive.js"></script>
 </head>
 
 <body>
@@ -36,10 +37,12 @@
     </div>
 
     <jquery-upload-wistia 
-      api-password="29d31c0f67ec595dbe674ca4093ef58cf4b07f6b76e6b8ea664e14d61dea29bd" 
-      project-id="6hh522pvwh">
+      api-password="<WISTIA_API_PASSWORD>" 
+      project-id="<WISTIA_PROJECT_ID>"
+      template-full-path="templates/jquery-upload-wistia.html">
     </jquery-upload-wistia>
   </div>
 
 </body>
+
 </html>
